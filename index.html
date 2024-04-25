@@ -160,11 +160,23 @@
                     <a href="images/Arvind_Resume.pdf" download class="btn btn2">DownLoad Resume</a>
                 </div>
                 <div class="contact-right">
-                    <form name="submit-to-google-sheet">
+<!--                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
+                    </form> -->
+                    <form action="https://formspree.io/f/xvoedlpy"   method="POST">
+                            <label>
+                                <input type="text" name="name" placeholder="Your Name" required>
+                            </label>
+                        <label>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </label>
+                        <label>
+                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        </label>
+                        <button type="submit" class="btn btn2">Send</button>
                     </form>
                     <span id="msg"></span>
                 </div>
